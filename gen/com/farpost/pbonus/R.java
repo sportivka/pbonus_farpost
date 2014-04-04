@@ -27,6 +27,7 @@ public final class R {
         public static final int background_frame=0x7f04000b;
         public static final int counter_text_bg=0x7f040009;
         public static final int counter_text_color=0x7f04000a;
+        public static final int green=0x7f04000c;
         public static final int list_background=0x7f040006;
         public static final int list_background_pressed=0x7f040007;
         public static final int list_divider=0x7f040008;
@@ -48,37 +49,57 @@ public final class R {
         public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
-        public static final int counter_bg=0x7f020000;
-        public static final int ic_activate=0x7f020001;
-        public static final int ic_communities=0x7f020002;
+        public static final int auth_button=0x7f020000;
+        public static final int counter_bg=0x7f020001;
+        public static final int ic_activate=0x7f020002;
         public static final int ic_drawer=0x7f020003;
-        public static final int ic_home=0x7f020004;
-        public static final int ic_info=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int ic_pages=0x7f020007;
-        public static final int ic_people=0x7f020008;
-        public static final int ic_photos=0x7f020009;
-        public static final int ic_point=0x7f02000a;
-        public static final int ic_profile=0x7f02000b;
-        public static final int ic_whats_hot=0x7f02000c;
-        public static final int list_item_bg_normal=0x7f02000d;
-        public static final int list_item_bg_pressed=0x7f02000e;
-        public static final int list_selector=0x7f02000f;
+        public static final int ic_fb=0x7f020004;
+        public static final int ic_fb_pressed=0x7f020005;
+        public static final int ic_google=0x7f020006;
+        public static final int ic_google_pressed=0x7f020007;
+        public static final int ic_info=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int ic_logo=0x7f02000a;
+        public static final int ic_point=0x7f02000b;
+        public static final int ic_profile=0x7f02000c;
+        public static final int ic_twitter=0x7f02000d;
+        public static final int ic_twitter_pressed=0x7f02000e;
+        public static final int ic_vk=0x7f02000f;
+        public static final int ic_vk_pressed=0x7f020010;
+        public static final int list_item_bg_normal=0x7f020011;
+        public static final int list_item_bg_pressed=0x7f020012;
+        public static final int list_selector=0x7f020013;
+        public static final int oauth_fb_button=0x7f020014;
+        public static final int oauth_google_button=0x7f020015;
+        public static final int oauth_twitter_button=0x7f020016;
+        public static final int oauth_vk_button=0x7f020017;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a000c;
-        public static final int captchaAnswer=0x7f0a0007;
-        public static final int captcha_container=0x7f0a0004;
-        public static final int counter=0x7f0a000a;
-        public static final int drawer_layout=0x7f0a0001;
-        public static final int frame_container=0x7f0a0002;
-        public static final int icon=0x7f0a0008;
-        public static final int imageView=0x7f0a0006;
-        public static final int list_slidermenu=0x7f0a0003;
-        public static final int progressBar=0x7f0a0005;
-        public static final int textView1=0x7f0a000b;
-        public static final int title=0x7f0a0009;
-        public static final int txtLabel=0x7f0a0000;
+        public static final int AuthBtn=0x7f0a0001;
+        public static final int Login_edit=0x7f0a000a;
+        public static final int Password_edit=0x7f0a0000;
+        public static final int action_settings=0x7f0a0018;
+        public static final int captchaAnswer=0x7f0a0012;
+        public static final int captcha_container=0x7f0a000f;
+        public static final int counter=0x7f0a0015;
+        public static final int divider=0x7f0a0009;
+        public static final int divider1=0x7f0a0008;
+        public static final int drawer_layout=0x7f0a000c;
+        public static final int frame_container=0x7f0a000d;
+        public static final int hr_text=0x7f0a0002;
+        public static final int icon=0x7f0a0013;
+        public static final int imageView=0x7f0a0011;
+        public static final int imageView1=0x7f0a000b;
+        public static final int list_slidermenu=0x7f0a000e;
+        public static final int oAuth_buttons=0x7f0a0003;
+        public static final int oAuth_fb=0x7f0a0005;
+        public static final int oAuth_google=0x7f0a0004;
+        public static final int oAuth_twitter=0x7f0a0006;
+        public static final int oAuth_vk=0x7f0a0007;
+        public static final int progressBar=0x7f0a0010;
+        public static final int textView1=0x7f0a0017;
+        public static final int title=0x7f0a0014;
+        public static final int txtLabel=0x7f0a0016;
     }
     public static final class layout {
         public static final int activity_auth=0x7f030000;
@@ -137,5 +158,8 @@ public final class R {
          */
         public static final int AppTheme=0x7f080001;
         public static final int LoginFormContainer=0x7f080002;
+        public static final int auth_button=0x7f080004;
+        public static final int auth_button_pressed=0x7f080005;
+        public static final int oAuth_icon=0x7f080003;
     }
 }

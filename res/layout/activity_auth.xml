@@ -2,22 +2,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f2f2f2"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AuthActivity" >
 
-    <TextView
+    <EditText
+        android:id="@+id/Password_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
- <Button
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:layout_above="@+id/txtLabel"
-     android:layout_centerHorizontal="true"
-     android:layout_marginBottom="30dp"
-     android:onClick="auth_function"
-     android:text="@string/button_auth" />
+        android:layout_above="@+id/AuthBtn"
+        android:layout_alignLeft="@+id/AuthBtn"
+        android:layout_alignRight="@+id/AuthBtn"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="textPassword" >
+        <requestFocus />
+    </EditText>
+    <Button
+        android:id="@+id/AuthBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hr_text"
+        android:layout_alignLeft="@+id/oAuth_buttons"
+        android:layout_alignRight="@+id/oAuth_buttons"
+        android:onClick="auth_function"
+        android:text="LOG IN" />
+
+    <LinearLayout
+        android:id="@+id/oAuth_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/oAuth_google"
+            style="@style/oAuth_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/oauth_google_button" />
+
+        <ImageButton
+            android:id="@+id/oAuth_fb"
+            style="@style/oAuth_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/oauth_fb_button" />
+
+        <ImageButton
+            android:id="@+id/oAuth_twitter"
+            style="@style/oAuth_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/oauth_twitter_button" />
+
+        <ImageButton
+            android:id="@+id/oAuth_vk"
+            style="@style/oAuth_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/oauth_vk_button" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/divider"
+        android:layout_toLeftOf="@+id/hr_text"
+        android:background="#c6ccd1" />
+
+    <TextView
+        android:id="@+id/hr_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/divider"
+        android:layout_centerHorizontal="true"
+        android:text="or use" />
+
+    <EditText
+        android:id="@+id/Login_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Password_edit"
+        android:layout_alignLeft="@+id/Password_edit"
+        android:layout_alignRight="@+id/Password_edit"
+        android:ems="10" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/oAuth_buttons"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@+id/hr_text"
+        android:background="#c6ccd1" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Login_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_logo" />
+
 </RelativeLayout>

@@ -15,10 +15,10 @@ public final class R {
 		public static final int vk_white = 0x7f040002;
 	}
 	public static final class id {
-		public static final int captchaAnswer = 0x7f0a0007;
-		public static final int captcha_container = 0x7f0a0004;
-		public static final int imageView = 0x7f0a0006;
-		public static final int progressBar = 0x7f0a0005;
+		public static final int captchaAnswer = 0x7f0a0012;
+		public static final int captcha_container = 0x7f0a000f;
+		public static final int imageView = 0x7f0a0011;
+		public static final int progressBar = 0x7f0a0010;
 	}
 	public static final class layout {
 		public static final int dialog_vkcaptcha = 0x7f030002;
