@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/ic_vk_pressed"
-          android:state_pressed="true" 
-          style="@style/auth_button_pressed" />
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item 
-        style="@style/auth_button"  />
-</selector>
+    <solid android:color="#e75b4d" />
+
+    <corners 
+        android:topLeftRadius="4dp"
+        android:topRightRadius="4dp"
+        android:bottomLeftRadius="4dp"
+        android:bottomRightRadius="4dp"
+
+        />
+
+</shape>

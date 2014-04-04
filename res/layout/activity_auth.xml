@@ -16,11 +16,22 @@
         android:layout_above="@+id/AuthBtn"
         android:layout_alignLeft="@+id/AuthBtn"
         android:layout_alignRight="@+id/AuthBtn"
-        android:layout_marginBottom="14dp"
+       
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:minHeight="30dp"
+        android:gravity="center_horizontal|center"
+        android:background="@drawable/edit_text"
         android:ems="10"
-        android:inputType="textPassword" >
+        
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#3a3a3a"
+        android:textColorHint="#dde0e3" >
+
         <requestFocus />
     </EditText>
+
     <Button
         android:id="@+id/AuthBtn"
         android:layout_width="wrap_content"
@@ -28,8 +39,11 @@
         android:layout_above="@+id/hr_text"
         android:layout_alignLeft="@+id/oAuth_buttons"
         android:layout_alignRight="@+id/oAuth_buttons"
+        android:background="@drawable/auth_button"
+      
         android:onClick="auth_function"
-        android:text="LOG IN" />
+        android:text="LOG IN"
+        android:textColor="#ffffff" />
 
     <LinearLayout
         android:id="@+id/oAuth_buttons"
@@ -84,15 +98,25 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/divider"
         android:layout_centerHorizontal="true"
+        
         android:text="or use" />
 
     <EditText
         android:id="@+id/Login_edit"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/Password_edit"
         android:layout_alignLeft="@+id/Password_edit"
         android:layout_alignRight="@+id/Password_edit"
+        android:background="@drawable/edit_text"
+        android:minHeight="30dp"
+        android:lines="1"
+		android:inputType="textPersonName"
+        android:gravity="center_horizontal|center"
+        android:textColor="#3a3a3a"
+        android:textColorHint="#dde0e3"
+        android:hint="Username"
+       
         android:ems="10" />
 
     <View
