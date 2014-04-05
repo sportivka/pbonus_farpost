@@ -1,45 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@color/background_frame"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_frame" >
 
-    <TextView
-        android:id="@+id/txtLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="180dp"
-        android:text="Activate Fragment"
-        android:textSize="16dp" />
+    <!-- Divider -->
 
-    <Button
-        android:id="@+id/ScanBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtLabel"
-        android:layout_alignRight="@+id/txtLabel"
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:background="@drawable/auth_button_normal"
-        android:onClick="Scan_code"
-        android:text="Считать код"
-        android:textColor="#ffffff" />
-<LinearLayout 
-    android:layout_width="match_parent" 
-    android:id="@+id/linearLayout1" 
-    android:layout_height="wrap_content">
-        
-        <EditText 
-            android:layout_weight="1"
-             android:id="@+id/editText1" 
-             android:layout_height="wrap_content"
-              android:layout_width="fill_parent" 
-              android:hint="you can type here ..." />
-        <Button android:id="@+id/button1"
-             android:layout_height="wrap_content" 
-             android:layout_width="wrap_content"
-              android:text="Button" />
+        android:background="@drawable/hr_line" />
+
+    <LinearLayout
+        android:id="@+id/activateform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_centerHorizontal="true"
+     
+        android:gravity="center_horizontal|center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+       >
+
+        <EditText
+            android:id="@+id/codeEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/act_edit_text"
+            android:ems="10"
+            android:textColor="#3a3a3a"
+        	android:textColorHint="#dde0e3"
+            android:gravity="center_horizontal|center"
+            android:hint="Введите код"
+            android:minHeight="40dp" />
+
+        <Button
+            android:id="@+id/codeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/act_button"
+            android:minHeight="40dp"
+            android:text="OK" />
     </LinearLayout>
-    
+
+ <LinearLayout
+     android:id="@+id/shotform"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/divider"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentRight="true"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:adjustViewBounds="true"
+     android:gravity="center_horizontal|center"
+     android:scaleType="center" >
+
+     <Button
+         android:id="@+id/ScanBtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/auth_button"
+         android:onClick="Scan_code"
+         android:padding="5dp"
+         android:text="Считать код"
+         android:textColor="#ffffff" />
+
+ </LinearLayout>
+
 </RelativeLayout>
