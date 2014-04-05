@@ -39,7 +39,7 @@
             android:textColor="#3a3a3a"
         	android:textColorHint="#dde0e3"
             android:gravity="center_horizontal|center"
-            android:hint="Введите код"
+            android:hint="@string/enter_code"
             android:minHeight="40dp" />
 	<!-- Code act button -->
         <Button
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/act_button"
             android:minHeight="40dp"
-            android:text="OK" />
+            android:text="@string/enter_btn" />
     </LinearLayout>
 <!-- ShotForm -->
  <LinearLayout
