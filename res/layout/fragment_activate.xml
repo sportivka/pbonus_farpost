@@ -3,15 +3,27 @@
     android:layout_width="match_parent"
     android:background="@color/background_frame"
     android:layout_height="match_parent">
-     
+
     <TextView
         android:id="@+id/txtLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
         android:text="Activate Fragment"
         android:textSize="16dp" />
 
-
+    <Button
+        android:id="@+id/ScanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLabel"
+        android:layout_alignRight="@+id/txtLabel"
+        android:layout_centerVertical="true"
+        android:background="@drawable/auth_button"
+        android:onClick="Scan_code"
+        android:text="Считать код"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>

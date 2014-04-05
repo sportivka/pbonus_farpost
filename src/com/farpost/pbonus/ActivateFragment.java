@@ -1,5 +1,4 @@
 package com.farpost.pbonus;
-
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,4 +17,5 @@ public class ActivateFragment extends Fragment {
          
         return rootView;
     }
+
 }

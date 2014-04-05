@@ -40,7 +40,7 @@
         android:layout_alignLeft="@+id/oAuth_buttons"
         android:layout_alignRight="@+id/oAuth_buttons"
         android:background="@drawable/auth_button"
-      
+      	android:layout_marginBottom="10dp"
         android:onClick="auth_function"
         android:text="LOG IN"
         android:textColor="#ffffff" />
