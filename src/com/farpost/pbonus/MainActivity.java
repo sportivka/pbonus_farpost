@@ -239,56 +239,28 @@ public class MainActivity extends Activity {
 		// Pass any configuration change to the drawer toggls
 		mDrawerToggle.onConfigurationChanged(newConfig);
 	}
-/*	public void Scan_code(View view) {
-		AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-		builder.setTitle("Scanner")
-				.setMessage("This was scanner!")
-				.setIcon(R.drawable.ic_activate)
-				.setCancelable(false)
-				.setNegativeButton("ÎK",
-						new DialogInterface.OnClickListener() {
-							public void onClick(DialogInterface dialog, int id) {
-								dialog.cancel();
-							}
-						});
-		AlertDialog alert = builder.create();
-		alert.show();
-		
-	} */
+
 	public void Scan_code(View view) {
-	 Log.d("Scan: ","Start Scan");
-	// IntentIntegrator integrator = new IntentIntegrator(MainActivity.this);
-	// integrator.initiateScan();
-//	 Intent intent = new Intent("com.google.zxing.client.android.SCAN");
- //    intent.putExtra("com.google.zxing.client.android.SCAN.SCAN_MODE", "QR_CODE_MODE");
- //    startActivityForResult(intent, 0);
+	Log.d("Scan: ","Start Scan");
+	 Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+     intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+     startActivityForResult(intent, 0);
 	}
-	/*
+
+
 	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-	    if (requestCode == 0) {
-	        if (resultCode == RESULT_OK) {
-	            String contents = intent.getStringExtra("SCAN_RESULT");
-	            String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
-	            // Handle successful scan
-	        } else if (resultCode == RESULT_CANCELED) {
-	            // Handle cancel
-	        }
-	    }
-	}
-	
-	 * 
-	 * 
-	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-		  IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
-		  if (scanResult != null) {
-			  String contents = intent.getStringExtra("SCAN_RESULT");
-	            String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
-	            Log.d("xZing", "contents: "+contents+" format: "+format);
-		  }
-		  // Handle cancel
-      	Log.d("xZing", "Cancelled");  
-		} */
-
-
-
+        if (requestCode == 0) {
+           if (resultCode == RESULT_OK) {
+               
+              String contents = intent.getStringExtra("SCAN_RESULT");
+              String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
+           
+              // Handle successful scan
+                                        
+           } else if (resultCode == RESULT_CANCELED) {
+              // Handle cancel
+              Log.i("App","Scan unsuccessful");
+           }
+      }
+   }
 }

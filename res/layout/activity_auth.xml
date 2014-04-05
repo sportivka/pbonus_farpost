@@ -9,6 +9,37 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AuthActivity" >
 
+<!-- Logo edit -->
+    <ImageView
+        android:id="@+id/LogoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Login_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_logo" />
+    
+<!-- Login Edit -->
+    <EditText
+        android:id="@+id/Login_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Password_edit"
+        android:layout_alignLeft="@+id/Password_edit"
+        android:layout_alignRight="@+id/Password_edit"
+        android:background="@drawable/edit_text"
+        android:minHeight="30dp"
+        android:lines="1"
+		android:inputType="textPersonName"
+        android:gravity="center_horizontal|center"
+        android:textColor="#3a3a3a"
+        android:textColorHint="#dde0e3"
+        android:hint="Username"
+        android:ems="10" />
+<!-- Password Edit -->
     <EditText
         android:id="@+id/Password_edit"
         android:layout_width="wrap_content"
@@ -28,23 +59,24 @@
         android:inputType="textPassword"
         android:textColor="#3a3a3a"
         android:textColorHint="#dde0e3" >
-
         <requestFocus />
     </EditText>
-
-    <Button
+    
+    
+<!-- Auth button -->
+  <Button
         android:id="@+id/AuthBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/hr_text"
+        android:layout_above="@+id/linearLayout1"
         android:layout_alignLeft="@+id/oAuth_buttons"
         android:layout_alignRight="@+id/oAuth_buttons"
         android:background="@drawable/auth_button"
-      	android:layout_marginBottom="10dp"
         android:onClick="auth_function"
         android:text="LOG IN"
         android:textColor="#ffffff" />
 
+<!-- oAuth button groups -->
     <LinearLayout
         android:id="@+id/oAuth_buttons"
         android:layout_width="wrap_content"
@@ -83,61 +115,30 @@
             android:src="@drawable/oauth_vk_button" />
 
     </LinearLayout>
+    
+    
 
-    <View
-        android:id="@+id/divider1"
+
+<!-- Divider -->
+    <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_above="@+id/divider"
-        android:layout_toLeftOf="@+id/hr_text"
-        android:background="#c6ccd1" />
-
-    <TextView
-        android:id="@+id/hr_text"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/divider"
-        android:layout_centerHorizontal="true"
-        
-        android:text="or use" />
-
-    <EditText
-        android:id="@+id/Login_edit"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/Password_edit"
-        android:layout_alignLeft="@+id/Password_edit"
-        android:layout_alignRight="@+id/Password_edit"
-        android:background="@drawable/edit_text"
-        android:minHeight="30dp"
-        android:lines="1"
-		android:inputType="textPersonName"
-        android:gravity="center_horizontal|center"
-        android:textColor="#3a3a3a"
-        android:textColorHint="#dde0e3"
-        android:hint="Username"
-       
-        android:ems="10" />
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
         android:layout_above="@+id/oAuth_buttons"
-        android:layout_marginBottom="15dp"
-        android:layout_toRightOf="@+id/hr_text"
-        android:background="#c6ccd1" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/Login_edit"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:adjustViewBounds="true"
-        android:scaleType="center"
-        android:src="@drawable/ic_logo" />
+        android:layout_marginTop="5dp" >
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_above="@+id/oAuth_buttons"
+            android:layout_toRightOf="@+id/hr_text"
+            android:background="@drawable/hr_line" />
+
+    </LinearLayout>
+
+  
 
 </RelativeLayout>
