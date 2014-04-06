@@ -246,13 +246,19 @@ public class MainActivity extends Activity {
 		mDrawerToggle.onConfigurationChanged(newConfig);
 	}
 
+	/*@Override
+	public void onBackPressed() {
+	    moveTaskToBack(true);
+	}*/
+
+	
 	public void Scan_code(View view) {
 	Log.d("Scan: ","Start Scan");
 	 Intent intent = new Intent("com.google.zxing.client.android.SCAN");
      intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
      startActivityForResult(intent, 0);
 	}
-
+	
 
 	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (requestCode == 0) {

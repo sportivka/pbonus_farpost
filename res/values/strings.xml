@@ -40,6 +40,7 @@
     <string name="enter_code">Введите код</string>
     <string name="enter_btn">OK</string>
     <string name="cont_desc">image</string>
+    <string name="scan_code">Считать код</string>
     <!-- Barcode Scanner Strings -->
   <string name="app_picker_name">Программы</string>
   <string name="bookmark_picker_name">Закладки</string>

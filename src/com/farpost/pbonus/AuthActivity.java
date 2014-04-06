@@ -1,9 +1,11 @@
 package com.farpost.pbonus;
 
 import com.vk.sdk.VKUIHelper;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.Window;
@@ -34,5 +36,18 @@ public class AuthActivity extends Activity {
 	public void auth_function(View view) {
 		Intent myIntent = new Intent(this, com.farpost.pbonus.MainActivity.class);
 		startActivity(myIntent);
+        finish();
+	}
+	public void act_oauth_twitter(View view){
+		Log.d("App","clicked twitter oAuth");	
+	}
+	public void act_oauth_fb(View view){
+		Log.d("App","clicked facebook oAuth");	
+	}
+	public void act_oauth_google(View view){
+		Log.d("App","clicked google oAuth");	
+	}
+	public void act_oauth_vk(View view){
+		Log.d("App","clicked vk oAuth");	
 	}
 }

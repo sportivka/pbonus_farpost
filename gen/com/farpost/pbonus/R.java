@@ -98,20 +98,22 @@ public final class R {
         public static final int ic_logo=0x7f020014;
         public static final int ic_point=0x7f020015;
         public static final int ic_profile=0x7f020016;
-        public static final int ic_twitter=0x7f020017;
-        public static final int ic_twitter_pressed=0x7f020018;
-        public static final int ic_user=0x7f020019;
-        public static final int ic_vk=0x7f02001a;
-        public static final int ic_vk_pressed=0x7f02001b;
-        public static final int launcher_icon=0x7f02001c;
-        public static final int list_item_bg_normal=0x7f02001d;
-        public static final int list_item_bg_pressed=0x7f02001e;
-        public static final int list_selector=0x7f02001f;
-        public static final int oauth_fb_button=0x7f020020;
-        public static final int oauth_google_button=0x7f020021;
-        public static final int oauth_twitter_button=0x7f020022;
-        public static final int oauth_vk_button=0x7f020023;
-        public static final int share_via_barcode=0x7f020024;
+        public static final int ic_return=0x7f020017;
+        public static final int ic_twitter=0x7f020018;
+        public static final int ic_twitter_pressed=0x7f020019;
+        public static final int ic_user=0x7f02001a;
+        public static final int ic_vk=0x7f02001b;
+        public static final int ic_vk_pressed=0x7f02001c;
+        public static final int launcher_icon=0x7f02001d;
+        public static final int list_item_bg_normal=0x7f02001e;
+        public static final int list_item_bg_pressed=0x7f02001f;
+        public static final int list_selector=0x7f020020;
+        public static final int logo=0x7f020021;
+        public static final int oauth_fb_button=0x7f020022;
+        public static final int oauth_google_button=0x7f020023;
+        public static final int oauth_twitter_button=0x7f020024;
+        public static final int oauth_vk_button=0x7f020025;
+        public static final int share_via_barcode=0x7f020026;
     }
     public static final class id {
         public static final int AuthBtn=0x7f09000a;
@@ -313,7 +315,7 @@ public final class R {
         public static final int preferences_custom_product_search_title=0x7f0a004e;
         public static final int preferences_decode_1D_industrial_title=0x7f0a004f;
         public static final int preferences_decode_1D_product_title=0x7f0a0050;
-        public static final int preferences_decode_1D_title=0x7f0a008a;
+        public static final int preferences_decode_1D_title=0x7f0a008b;
         public static final int preferences_decode_Aztec_title=0x7f0a0051;
         public static final int preferences_decode_Data_Matrix_title=0x7f0a0052;
         public static final int preferences_decode_PDF417_title=0x7f0a0053;
@@ -342,8 +344,8 @@ public final class R {
         public static final int preferences_search_country=0x7f0a006a;
         public static final int preferences_supplemental_summary=0x7f0a006b;
         public static final int preferences_supplemental_title=0x7f0a006c;
-        public static final int preferences_try_bsplus=0x7f0a008b;
-        public static final int preferences_try_bsplus_summary=0x7f0a008c;
+        public static final int preferences_try_bsplus=0x7f0a008c;
+        public static final int preferences_try_bsplus_summary=0x7f0a008d;
         public static final int preferences_vibrate_title=0x7f0a006d;
         public static final int result_address_book=0x7f0a006e;
         public static final int result_calendar=0x7f0a006f;
@@ -357,6 +359,7 @@ public final class R {
         public static final int result_uri=0x7f0a0077;
         public static final int result_wifi=0x7f0a0078;
         public static final int sbc_name=0x7f0a0079;
+        public static final int scan_code=0x7f0a008a;
         public static final int text_about=0x7f0a0081;
         public static final int text_agreement=0x7f0a0083;
         public static final int text_info=0x7f0a0082;
@@ -365,8 +368,8 @@ public final class R {
         public static final int vk_enter_captcha_text=0x7f0a007b;
         public static final int vk_retry=0x7f0a007c;
         public static final int wifi_changing_network=0x7f0a007a;
-        public static final int wifi_ssid_label=0x7f0a008d;
-        public static final int wifi_type_label=0x7f0a008e;
+        public static final int wifi_ssid_label=0x7f0a008e;
+        public static final int wifi_type_label=0x7f0a008f;
     }
     public static final class style {
         /** 

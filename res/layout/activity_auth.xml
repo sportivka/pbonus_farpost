@@ -13,7 +13,8 @@
     <ImageView
         android:id="@+id/LogoView"     
         android:layout_above="@+id/Login_edit"
-        android:src="@drawable/ic_logo"
+   
+       	android:src="@drawable/ic_logo"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
@@ -67,6 +68,7 @@
             style="@style/oAuth_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="act_oauth_google"
             android:src="@drawable/oauth_google_button" />
 
         <ImageButton
@@ -74,6 +76,7 @@
             style="@style/oAuth_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="act_oauth_fb"
             android:src="@drawable/oauth_fb_button" />
 
         <ImageButton
@@ -81,6 +84,7 @@
             style="@style/oAuth_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="act_oauth_twitter"
             android:src="@drawable/oauth_twitter_button" />
 
         <ImageButton
@@ -88,6 +92,7 @@
             style="@style/oAuth_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="act_oauth_vk"
             android:src="@drawable/oauth_vk_button" />
 
     </LinearLayout>
