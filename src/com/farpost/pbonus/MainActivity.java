@@ -31,6 +31,7 @@ import android.widget.TabHost;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+import com.vk.sdk.VKUIHelper;
 //com.google.zxing.client.android.SCAN
 
 @SuppressLint("NewApi")
@@ -51,6 +52,19 @@ public class MainActivity extends Activity {
 
 	private ArrayList<NavDrawerItem> navDrawerItems;
 	private NavDrawerListAdapter adapter;
+	
+	@Override
+	protected void onResume() {
+	    super.onResume();
+	    VKUIHelper.onResume(this);
+	}
+
+	@Override
+	protected void onDestroy() {
+	    super.onDestroy();
+	    VKUIHelper.onDestroy(this);
+	}
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -261,6 +275,8 @@ public class MainActivity extends Activity {
 	
 
 	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+	
+		VKUIHelper.onActivityResult(requestCode, resultCode, intent);
         if (requestCode == 0) {
            if (resultCode == RESULT_OK) {
                
