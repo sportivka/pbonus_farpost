@@ -1,15 +1,5 @@
 package com.farpost.pbonus.Activities;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -18,13 +8,16 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.EditText;
 
 import com.farpost.pbonus.ConnectionDetector;
 import com.farpost.pbonus.R;
 import com.farpost.pbonus.api.ApiClient;
+import com.farpost.pbonus.api.Authorization;
 import com.vk.sdk.VKAccessToken;
 import com.vk.sdk.VKCaptchaDialog;
 import com.vk.sdk.VKScope;
@@ -61,26 +54,24 @@ public class AuthActivity extends Activity {
 	} 
 
 	/*Shared Preferences*/
-	 SharedPreferences sPref;
-	 
+	 SharedPreferences sPref; 
 	/*check internet connection*/
-    Boolean isInternetPresent = false; 
-	InputStream instream;
+    Boolean isInternetPresent = false;
     /*Create Connect detector*/
     ConnectionDetector cd;
-    String api ;
  	/*Secret token vk app*/
     private static String sTokenKey = "UIM9Hwu4AucKdVXYLqpt";
-    
     /*id vk app*/
     private static String AppId = "4286713";
-    
     /*Scope for vk api*/
     private static String[] sMyScope = new String[]{VKScope.NOTIFICATIONS, VKScope.PHOTOS,  VKScope.OFFLINE};
-	
+    EditText  login_edit = (EditText)findViewById(R.id.Login_edit);
+    EditText password_edit = (EditText)findViewById(R.id.Password_edit);
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+		StrictMode.setThreadPolicy(policy); 
 		/* show Status Bar*/
 		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		
@@ -137,24 +128,21 @@ public class AuthActivity extends Activity {
 	
 	public void act_oauth_google(View view){
 		Log.d("App","clicked google oAuth");
-		
-		//ApiClient apiClient = new ApiClient();
-		
-		Thread thread = new Thread(new Runnable(){
-		    @Override
-		    public void run() {
-		        try {
-		        	Log.d("App"," " + GetRequest());
-		        } catch (Exception e) {
-		            e.printStackTrace();
-		        }
-		    }
-		});
-
-		thread.start();
+		//Create Api Client
+		ApiClient apiClient = new ApiClient();
+		//Create auth Field
+		Authorization auth = new Authorization();
+		  auth.setLogin(login_edit.getText().toString());
+		  auth.setPassword(password_edit.getText().toString());
+		  auth.setTypeLogin("default");
+		  try {  
+		Log.d("App"," " + apiClient.Authorization(auth));
+		  } catch (Exception e) {
+	            e.printStackTrace();
+	        }
 	}
 		
-	
+	/*
     public String GetRequest(){
 	
 		 try {
@@ -194,7 +182,7 @@ public class AuthActivity extends Activity {
           return sb.toString();
 
      }
-	
+	*/
 
 	public void act_oauth_vk(View view){
 		String[] fingerprints = VKUtil.getCertificateFingerprint(this, this.getPackageName()); 
