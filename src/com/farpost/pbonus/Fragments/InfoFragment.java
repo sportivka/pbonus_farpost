@@ -1,4 +1,6 @@
-package com.farpost.pbonus;
+package com.farpost.pbonus.Fragments;
+
+import com.farpost.pbonus.R;
 
 import android.app.Fragment;
 import android.os.Bundle;

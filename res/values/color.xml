@@ -9,4 +9,7 @@
     <color name="background_frame">#f2f2f2</color>
     <color name="green">#00a658</color>
     <color name="white">#ffffff</color>
+    <color name="list_p_normal">#f2f2f2</color>
+    <color name="list_p_pressed">#ffcccc</color>
+    <color name="list_p_divider">#cccccc</color>
 </resources>

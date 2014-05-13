@@ -22,13 +22,13 @@
         <activity android:name="com.vk.sdk.VKOpenAuthActivity" />
         
         <activity
-            android:name="com.farpost.pbonus.MainActivity"
+            android:name="com.farpost.pbonus.Activities.MainActivity"
             android:label="@string/app_name" >
           
         </activity>
         <activity
-            android:name="com.farpost.pbonus.AuthActivity"
-            android:label="@string/title_activity_auth" 
+            android:name="com.farpost.pbonus.Activities.AuthActivity"
+            android:label="@string/app_name" 
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
               <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

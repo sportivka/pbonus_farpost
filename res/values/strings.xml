@@ -5,7 +5,7 @@
     <string name="action_settings">Настройки</string>
 
 
-    <!-- Nav Drawer Menu Items -->
+    <!--  Menu Items -->
     <string-array name="nav_drawer_items">
         <item>Точки</item>
         <item>Активировать код</item>
@@ -15,7 +15,7 @@
         <!-- <item>What\'s Hot</item> -->
     </string-array>
 
-    <!-- Nav Drawer List Item Icons -->
+    <!--  List Item Icons -->
     <!-- Keep them in order as the titles are in -->
     <array name="nav_drawer_icons">
         <item>@drawable/ic_point</item>
@@ -26,21 +26,27 @@
         <!-- <item>@drawable/ic_whats_hot</item> -->
     </array>
 
-    <!-- Content Description -->
+    <!-- Auth Activity -->
     <string name="desc_list_item_icon">Item Icon</string>
     <string name="title_activity_auth">Авторизация</string>
     <string name="button_auth">Auth</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOG IN</string>
+    <string name="chk_cnt">Проверьте подключение</string>
+    <string name="alert_chk_cnt">Отсутствует подключение к сети интернет</string>
+    <!-- Info Fragment  -->
     <string name="text_about">About. \n Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</string>
 	<string name="text_info">Info \n Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</string>
 	<string name="text_agreement">Agreement \n Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</string>
 	
-	<string name="username">Username</string>
-    <string name="password">Password</string>
-    <string name="login">LOG IN</string>
+	<!-- Activate Fragment -->
     <string name="enter_code">Введите код</string>
     <string name="enter_btn">OK</string>
     <string name="cont_desc">image</string>
     <string name="scan_code">Считать код</string>
+    
+    
     <!-- Barcode Scanner Strings -->
   <string name="app_picker_name">Программы</string>
   <string name="bookmark_picker_name">Закладки</string>

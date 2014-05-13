@@ -1,5 +1,10 @@
-package com.farpost.pbonus;
+package com.farpost.pbonus.Activities;
 
+import com.farpost.pbonus.R;
+import com.farpost.pbonus.Fragments.ActivateFragment;
+import com.farpost.pbonus.Fragments.InfoFragment;
+import com.farpost.pbonus.Fragments.PointsFragment;
+import com.farpost.pbonus.Fragments.ProfileFragment;
 import com.farpost.pbonus.slidingmenu.adapter.NavDrawerListAdapter;
 import com.farpost.pbonus.slidingmenu.model.NavDrawerItem;
 
@@ -28,11 +33,9 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TabHost;
-
-import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
 import com.vk.sdk.VKUIHelper;
-//com.google.zxing.client.android.SCAN
+
+
 
 @SuppressLint("NewApi")
 public class MainActivity extends Activity {

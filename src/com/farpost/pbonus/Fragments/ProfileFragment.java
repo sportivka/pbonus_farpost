@@ -1,5 +1,6 @@
-package com.farpost.pbonus;
+package com.farpost.pbonus.Fragments;
 
+import com.farpost.pbonus.R;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -7,15 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class PointsFragment extends Fragment {
+public class ProfileFragment extends Fragment {
 	
-	public PointsFragment(){}
+	public ProfileFragment(){}
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
- 
-        View rootView = inflater.inflate(R.layout.fragment_points, container, false);
+		
+        View rootView = inflater.inflate(R.layout.fragment_profile, container, false);
          
         return rootView;
     }
